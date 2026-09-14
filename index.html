@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR" data-order-url="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#B70202" />
+    <link
+      rel="icon"
+      href="./assets/logo/logo-the-boys-recortado.png"
+    />
+    <meta
+      name="description"
+      content="The Boys Burger — o melhor hambúrguer da Candangolândia."
+    />
+    <title>The Boys Burger</title>
+    <link rel="stylesheet" href="./src/styles.css?v=11" />
+    <script src="./src/main.js?v=11" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="The Boys Burger — início">
+        <span class="brand__crop" aria-hidden="true">
+          <img
+            class="brand__art"
+            src="./assets/logo/logo-the-boys-recortado.png"
+            alt=""
+            width="1600"
+            height="1600"
+          />
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#inicio" aria-current="page">Início</a>
+      </nav>
+
+      <button class="header-order order-trigger" type="button">
+        <span>Faça seu pedido</span>
+        <span class="action-mark" aria-hidden="true"></span>
+      </button>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-navigation"
+      >
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav
+        class="mobile-nav"
+        id="mobile-navigation"
+        aria-label="Navegação mobile"
+        hidden
+      >
+        <a href="#inicio" aria-current="page">Início</a>
+        <button class="mobile-nav__order order-trigger" type="button">
+          Faça seu pedido
+        </button>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__spotlight" aria-hidden="true"></div>
+        <div class="hero__halftone" aria-hidden="true"></div>
+        <div class="hero__speed-lines" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="sr-only">O melhor Hambúrguer da Candangolândia</span>
+          <span class="hero__title-side hero__title-side--left" aria-hidden="true">
+            <span>O melhor</span>
+            <strong>Hambúrguer</strong>
+          </span>
+          <span class="hero__title-side hero__title-side--right" aria-hidden="true">
+            <span>Da</span>
+            <strong>
+              <span>Candango</span>
+              <span>lândia</span>
+            </strong>
+          </span>
+        </h1>
+
+        <div class="hero__product" data-product>
+          <div class="hero__product-shadow" aria-hidden="true"></div>
+          <img
+            src="./assets/burgers/hero-the-boys-recortado.png"
+            alt="Hambúrguer da The Boys Burger segurado por uma mão e envolvido por uma capa"
+            width="768"
+            height="1024"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+
+        <div class="hero__action-group">
+          <button class="hero-order order-trigger" type="button">
+            <span>Faça seu pedido</span>
+            <span class="action-mark" aria-hidden="true"></span>
+          </button>
+          <p class="order-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="hero__checker hero__checker--top" aria-hidden="true"></div>
+        <div class="hero__checker hero__checker--bottom" aria-hidden="true"></div>
+        <div class="hero__corner-copy" aria-hidden="true">The Boys Burger</div>
+      </section>
+
+      <section class="combos" id="combos" aria-labelledby="combos-title" data-combo-section>
+        <div class="combos__heading">
+          <h2 class="combos__title" id="combos-title">
+            <span>Nossos</span>
+            <strong>Combos</strong>
+          </h2>
+        </div>
+
+        <div
+          class="coverflow"
+          role="region"
+          aria-roledescription="carrossel"
+          aria-label="Combos da The Boys Burger"
+          data-coverflow
+        >
+          <div class="coverflow__viewport" tabindex="0" data-coverflow-viewport>
+            <div class="coverflow__track">
+              <article
+                class="combo-slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 de 3 — Combo Capitão Pátria, R$ 44,00"
+                data-combo-name="Combo Capitão Pátria"
+                data-combo-price="R$ 44,00"
+                data-combo-slide
+              >
+                <img
+                  src="./assets/combos/ChatGPT Image 13 de set. de 2026, 23_36_33 (1).png"
+                  alt="Combo Capitão Pátria com hambúrguer, batatas e refrigerante"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </article>
+
+              <article
+                class="combo-slide is-active"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 de 3 — Combo Especial da Casa X Tudo, R$ 34,00"
+                data-combo-name="Combo Especial da Casa X Tudo"
+                data-combo-price="R$ 34,00"
+                data-combo-slide
+              >
+                <img
+                  src="./assets/combos/ChatGPT Image 13 de set. de 2026, 23_41_49 (1).png"
+                  alt="Combo Especial da Casa X Tudo com hambúrguer, batatas e refrigerante"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </article>
+
+              <article
+                class="combo-slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 de 3 — Combo X-Burguer, R$ 23,00"
+                data-combo-name="Combo X-Burguer"
+                data-combo-price="R$ 23,00"
+                data-combo-slide
+              >
+                <img
+                  src="./assets/combos/ChatGPT Image 13 de set. de 2026, 23_40_01 (1).png"
+                  alt="Combo X-Burguer com hambúrguer, batatas e refrigerante"
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </article>
+            </div>
+          </div>
+
+          <button class="coverflow__arrow coverflow__arrow--previous" type="button" data-combo-previous aria-label="Combo anterior">
+            <span aria-hidden="true">←</span>
+          </button>
+          <button class="coverflow__arrow coverflow__arrow--next" type="button" data-combo-next aria-label="Próximo combo">
+            <span aria-hidden="true">→</span>
+          </button>
+
+          <div class="coverflow__pagination" aria-label="Escolher combo">
+            <button type="button" data-combo-dot="0" aria-label="Mostrar Combo Capitão Pátria"></button>
+            <button class="is-active" type="button" data-combo-dot="1" aria-label="Mostrar Combo Especial da Casa X Tudo" aria-current="true"></button>
+            <button type="button" data-combo-dot="2" aria-label="Mostrar Combo X-Burguer"></button>
+          </div>
+        </div>
+
+        <div class="combo-info" data-combo-info aria-live="polite" aria-atomic="true">
+          <p class="combo-info__counter"><span data-combo-current>02</span> / 03</p>
+          <h3 class="combo-info__name" data-combo-name-output>Combo Especial da Casa X Tudo</h3>
+          <p class="combo-info__price" data-combo-price-output>R$ 34,00</p>
+          <button class="combo-info__order order-trigger" type="button">
+            <span>Faça seu pedido</span>
+            <span class="action-mark" aria-hidden="true"></span>
+          </button>
+          <p class="order-status combo-info__status" role="status"></p>
+        </div>
+
+        <div class="combos__footer-checker" aria-hidden="true"></div>
+      </section>
+    </main>
+  </body>
+</html>
